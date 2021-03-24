@@ -7,10 +7,13 @@ def prompt
     a = gets.chomp
     a.to_s
 end
-url  = prompt()
-open(url) do |rss|
-    feed = RSS::Parser.parse(rss)
-    puts "Title: #{feed.channel.title}"
-    puts "link: #{feed.channel.link}"
-    puts "Descreption: #{feed.channel.description}"
+
+while 1
+    url  = prompt()
+    open(url) do |rss|
+        feed = RSS::Parser.parse(rss)
+        puts "Title: #{feed.channel.title}"
+        puts "link: #{feed.channel.link}"
+        puts "Descreption: #{feed.channel.description}"
+    end  
 end
