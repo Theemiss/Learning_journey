@@ -20,3 +20,13 @@ end
 check_sign(-5)
 check_sign(5)
 check_sign(0)
+
+number = 6
+# unless statment 
+unless number.odd?
+  puts "The number is not odd."
+end
+
+puts "The number is not odd." unless number.odd?
+puts "Always true" if not false
+puts "alwas true" unless false

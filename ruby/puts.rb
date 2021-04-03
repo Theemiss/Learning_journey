@@ -5,3 +5,9 @@ puts 5 + 2
 puts "ahmed" * 10 
 ah = 50
 puts ah
+
+p "A String"
+p 'A String'
+p %(A String)
+p %{A String}
+p %|A String|
