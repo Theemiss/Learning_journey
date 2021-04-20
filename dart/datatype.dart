@@ -1,3 +1,4 @@
+// ignore: unused_import
 import 'dart:io';
 // data type and variable declaration
 main() {

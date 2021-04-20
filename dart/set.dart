@@ -22,7 +22,8 @@ main() {
   print(setOfFruits);
     print(setOfFruits.length);
     // add duplicated value 
-setOfFruits = {'apples', 'bananas', 'oranges', 'watermelon', 'grapes', 'apples'};
+// ignore: equal_elements_in_set
+setOfFruits = {'apples', 'bananas', 'oranges', 'watermelon', 'grapes', "apples"};
  // set lenghth ignore duplicated item 
   print(setOfFruits.length);
   setOfFruits.remove('bananas');
